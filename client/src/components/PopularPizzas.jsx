@@ -10,7 +10,7 @@ function PopularPizzas() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/pizzas")
+    fetch("https://pizzarush-974c.onrender.com/api/pizzas")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch pizzas");
